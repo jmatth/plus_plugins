@@ -46,7 +46,7 @@ fi
 
 if [ "$ACTION" == "windows" ]
 then
-  melos.bat bootstrap --scope="$PLUGIN_SCOPE"
+  melos.bat bootstrap
   melos.bat exec -c 1 --scope="$PLUGIN_EXAMPLE_SCOPE" \
     -- flutter build --verbose windows $FLUTTER_COMMAND_FLAGS --debug --target="$TARGET_FILE" --dart-define=CI=true
   exit
