@@ -15,7 +15,6 @@ env:
 
 jobs:
   android_build:
-    if: false
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
@@ -35,7 +34,6 @@ jobs:
         run: ./.github/workflows/scripts/build-examples.sh android ./lib/main.dart
 
   android_integration_test:
-    if: false
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
@@ -63,7 +61,6 @@ jobs:
           script: ./.github/workflows/scripts/integration-test.sh android sensors_plus_example
 
   ios:
-    if: false
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
@@ -77,7 +74,6 @@ jobs:
         run: ./.github/workflows/scripts/build-examples.sh ios ./lib/main.dart
 
   ios_integration_test:
-    if: false
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
@@ -95,7 +91,6 @@ jobs:
         run: ./.github/workflows/scripts/integration-test.sh ios sensors_plus_example
 
   web:
-    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

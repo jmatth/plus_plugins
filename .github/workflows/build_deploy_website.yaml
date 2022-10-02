@@ -13,7 +13,6 @@ defaults:
 jobs:
   build:
     name: Build
-    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -31,7 +30,6 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
